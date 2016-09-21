@@ -119,6 +119,9 @@ HAVE_ADRENO_SOURCE:= false
 # Build libc with gcc
 TARGET_NEEDS_GCC_LIBC:= true
 
+# SecComp
+BOARD_SECCOMP_POLICY := device/asus/flo/seccomp
+
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # Include an expanded selection of fonts
