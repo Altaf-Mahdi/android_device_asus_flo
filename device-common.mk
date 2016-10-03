@@ -274,6 +274,10 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
+# Set bluetooth soc name to smd
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.bluetooth.soc=smd
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
