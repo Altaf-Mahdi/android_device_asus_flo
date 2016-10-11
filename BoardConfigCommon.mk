@@ -116,6 +116,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 HAVE_ADRENO_SOURCE:= false
 
+# Build libc with gcc
+TARGET_NEEDS_GCC_LIBC:= true
+
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # Include an expanded selection of fonts
